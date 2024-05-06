@@ -1,6 +1,57 @@
 # Interactive Client Side JavaScript Troubleshooting Guide
 Welcome to our Interactive Client-Side JavaScript Troubleshooting Guide. Here you will find detailed solutions to common problems that users encounter when working with JavaScript in their browsers.
 
+---
+
+### Table of Contents
+
+- [1. Asynchronous Loading Issue](#1-asynchronous-loading-issue)
+  - [Description](#description)
+  - [Possible Causes](#possible-causes)
+  - [Solution](#solution)
+    - [Verify Correct Loading of External Resources](#1-verify-correct-loading-of-external-resources)
+    - [Utilize Resource Preloading Techniques](#2-utilize-resource-preloading-techniques)
+    - [Delay Execution of Code Dependent on External Resources](#3-delay-execution-of-code-dependent-on-external-resources)
+    - [Utilize JavaScript Libraries or Frameworks](#4-utilize-javascript-libraries-or-frameworks)
+    - [Implementation Example](#implementation-example)
+
+- [2. Syntax Error](#2-syntax-error)
+  - [Description](#description-1)
+  - [Solution](#solution-1)
+    - [Carefully Check the Code](#1-carefully-check-the-code)
+    - [Use Browser Debugging Tools](#2-use-browser-debugging-tools)
+    - [Consult Official JavaScript Documentation](#3-consult-official-javascript-documentation)
+
+- [3. Event Handling Issue](#3-event-handling-issue)
+  - [Description](#description-2)
+  - [Possible Causes](#possible-causes-1)
+  - [Solution](#solution-2)
+    - [Check Event Selectors](#1-check-event-selectors)
+    - [Define and Implement Callback Functions Correctly](#2-define-and-implement-callback-functions-correctly)
+    - [Use addEventListener for Event Handling](#3-use-addeventlistener-for-event-handling)
+    - [Additional Considerations](#additional-considerations)
+
+- [4. Browser Compatibility Issue](#4-browser-compatibility-issue)
+  - [Description](#description-3)
+  - [Causes](#causes)
+  - [Impact](#impact)
+  - [Solution](#solution-3)
+    - [Comprehensive Testing Across Popular Browsers](#1-comprehensive-testing-across-popular-browsers)
+    - [Utilize Compatibility Checking Resources](#2-utilize-compatibility-checking-resources)
+    - [Implement Polyfill or Fallback Techniques](#3-implement-polyfill-or-fallback-techniques)
+    - [Practical Example](#practical-example)
+
+- [5. JavaScript Performance and Optimization Issue](#5-javascript-performance-and-optimization-issue)
+  - [Description](#description-4)
+  - [Solution](#solution-4)
+    - [Code Analysis and Optimization](#1-code-analysis-and-optimization)
+    - [Minimization and Concatenation of Files](#2-minimization-and-concatenation-of-files)
+    - [Avoid Costly Operations](#3-avoid-costly-operations)
+    - [Minimize DOM Manipulation](#4-minimize-dom-manipulation)
+    - [Use Performance Profiling Tools](#5-use-performance-profiling-tools)
+
+---
+
 ## 1. Asynchronous Loading Issue
 
 ### Description:
