@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Example</title>
+</head>
+<body>
+    <button id="myButton">Click Here</button>
+    <script>
+        // JavaScript
+        const myButton = document.getElementById('myButton');
+        
+        // Callback function for button click event
+        function handleClick(event) {
+            // Event handling logic here
+            console.log('The button was clicked!');
+        }
+
+        // Attaching event listener to the button
+        myButton.addEventListener('click', handleClick);
+    </script>
+</body>
+</html>

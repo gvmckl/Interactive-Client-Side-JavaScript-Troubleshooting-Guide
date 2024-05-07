@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Otimização de Desempenho em JavaScript</title>
+    <style>
+        /* Estilos CSS */
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .box {
+            width: calc(25% - 10px);
+            height: 50px;
+            background-color: #3498db;
+            margin-bottom: 10px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Otimização de Desempenho em JavaScript</h1>
+    <p>Esta página demonstra várias técnicas para otimizar o desempenho do JavaScript.</p>
+
+    <div id="container"></div>
+
+    <script>
+        // Código otimizado
+        function gerarCaixas() {
+            const container = document.getElementById('container');
+            const fragmento = document.createDocumentFragment();
+            for (let i = 0; i < 1000; i++) {
+                const div = document.createElement('div');
+                div.className = 'caixa';
+                div.textContent = i;
+                fragmento.appendChild(div);
+            }
+            container.appendChild(fragmento);
+        }
+
+        // Chama a função para gerar as caixas
+        gerarCaixas();
+    </script>
+</body>
+</html>
