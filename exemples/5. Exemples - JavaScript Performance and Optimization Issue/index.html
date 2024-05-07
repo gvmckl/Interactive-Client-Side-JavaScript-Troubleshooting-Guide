@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Otimização de Desempenho em JavaScript</title>
+    <title>JavaScript Performance Optimization Example</title>
     <style>
-        /* Estilos CSS */
+        /* CSS styles */
         #container {
             display: flex;
             flex-wrap: wrap;
@@ -24,27 +24,27 @@
     </style>
 </head>
 <body>
-    <h1>Exemplo de Otimização de Desempenho em JavaScript</h1>
-    <p>Esta página demonstra várias técnicas para otimizar o desempenho do JavaScript.</p>
+    <h1>JavaScript Performance Optimization Example</h1>
+    <p>This page demonstrates various techniques for optimizing JavaScript performance.</p>
 
     <div id="container"></div>
 
     <script>
-        // Código otimizado
-        function gerarCaixas() {
+        // Optimized code
+        function generateBoxes() {
             const container = document.getElementById('container');
-            const fragmento = document.createDocumentFragment();
+            const fragment = document.createDocumentFragment();
             for (let i = 0; i < 1000; i++) {
                 const div = document.createElement('div');
-                div.className = 'caixa';
+                div.className = 'box';
                 div.textContent = i;
-                fragmento.appendChild(div);
+                fragment.appendChild(div);
             }
-            container.appendChild(fragmento);
+            container.appendChild(fragment);
         }
 
-        // Chama a função para gerar as caixas
-        gerarCaixas();
+        // Call the function to generate boxes
+        generateBoxes();
     </script>
 </body>
 </html>
