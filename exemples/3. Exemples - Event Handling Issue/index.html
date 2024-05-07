@@ -4,20 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Handling Example</title>
+    <style>
+        
+        body {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        
+        #myButton {
+            background-color: blue;
+            color: white; 
+            font-size: 24px; 
+            padding: 20px 40px; 
+            border: none; 
+            border-radius: 10px;
+            cursor: pointer; 
+        }
+
+        #message {
+            display: none; 
+            position: absolute;
+            top: 200px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            padding: 10px;
+            border-radius: 5px; 
+        }
+    </style>
 </head>
 <body>
     <button id="myButton">Click Here</button>
+    <!-- Paragraph to display the message -->
+    <p id="message">The button was clicked!</p>
     <script>
-        // JavaScript
+       
+        // Selecting the button element by its id
         const myButton = document.getElementById('myButton');
+        // Selecting the message element by its id
+        const message = document.getElementById('message');
         
-        // Callback function for button click event
+        // Callback function to handle the button click event
         function handleClick(event) {
             // Event handling logic here
             console.log('The button was clicked!');
+            // Display the message
+            message.style.display = 'block';
+            // Hide the message after 2 seconds
+            setTimeout(function() {
+                message.style.display = 'none';
+            }, 2000);
         }
 
-        // Attaching event listener to the button
+        // Attaching an event listener to the button, listening for the 'click' event
+        // When the button is clicked, the handleClick function will be called
         myButton.addEventListener('click', handleClick);
     </script>
 </body>

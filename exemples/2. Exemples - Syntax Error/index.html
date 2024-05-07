@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syntax Error Example</title>
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #calculateButton {
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+
+        #result {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Syntax Error Example</h1>
-    <button id="calculateButton">Calculate</button>
-
-    <!-- Include JavaScript File -->
+    <div class="container">
+        <h1>Syntax Error Example</h1>
+        <input type="number" id="numberA" placeholder="Enter number A">
+        <input type="number" id="numberB" placeholder="Enter number B">
+        <button id="calculateButton">Calculate</button>
+        <p id="result"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

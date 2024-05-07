@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browser Compatibility Example</title>
+    <style>
+        #notificationButton {
+            background-color: blue; 
+            color: white; 
+            font-size: 18px;
+            padding: 15px 30px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        }
+
+        h1 {
+            position: absolute; 
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+    </style>
 </head>
 <body>
     <h1>Browser Compatibility Example</h1>
     <button id="notificationButton">Show Notification</button>
-
     <!-- Include ES6 Promise Polyfill for compatibility -->
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
     <!-- Include JavaScript file -->
